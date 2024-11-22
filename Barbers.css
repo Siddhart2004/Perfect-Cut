@@ -22,7 +22,8 @@ body{
     display: flex;
     align-items: center; 
     padding: 20px;
-    gap: 10px; /* Control the gap between the logo and text */
+    gap: 15px;
+     /* Control the gap between the logo and text */
 }
 
 .nav img {
@@ -388,8 +389,62 @@ ul li a:focus {
 
 
 /* responsiveness */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .content_container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header_content {
+        width: 90%;
+    }
+
+    .header_img-container {
+        display: none;
+    }
+
+    .experience {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width:600px){
+    .nav img {
+        height: 30px;
+        width: auto;
+        border-radius: 100%;
+    }
+    
+    .logo-text {
+        font-size: 0.75rem;
+        margin-left: 0; 
+        color: whitesmoke;
+    }
+    ul li a {
+        font-size: 0.75rem;
+        text-decoration: none;
+        margin: 7px;
+        color: whitesmoke;
+        font-family: var(--secondary-font);
+    }
+    
     .header_content{
         align-items:center;
         text-align:cenetr;
@@ -421,14 +476,21 @@ ul li a:focus {
         display: none;
     }
 
-    .social-media-container{
+    /* .social-media-container{
         flex-direction: column;
-    }
+    } */
+
     .list-items{
         margin:10px;
     }
     .experience-img{
         display: none;
+    }
+   .services_heading{
+        margin-left:10rem;
+    }
+    .cards{
+    margin-left:2rem;
     }
     .footer {
         flex-direction: column;
@@ -441,4 +503,10 @@ ul li a:focus {
         flex: 1 1 100%; 
         margin-bottom: 2rem; 
     }
+     .timings{
+        margin-left:5rem;
+     }
+     .branches{
+        margin-left: 2.25rem;
+     }
 }
