@@ -140,8 +140,10 @@ ul li a:focus {
     border-radius: 5px;
 }
 .main-btn:hover{
+    background:#2d3e5c;
     transform: scale(1.1); 
     box-shadow: 1px 1px 1px 1px rgb(109, 109, 109);
+    
 }
 /* section one end */
 
