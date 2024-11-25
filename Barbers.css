@@ -33,9 +33,9 @@ body{
 }
 
 .logo-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-left: 0; 
-    color: whitesmoke;
+    color:#fbfff6;
 }
 
 ul {
@@ -49,16 +49,16 @@ ul li {
 }
 
 ul li a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-decoration: none;
-    margin: 7px;
-    color: whitesmoke;
+    margin: 10px;
+    color: rgb(109, 109, 109);
     font-family: var(--secondary-font);
 }
 
 ul li a:hover {
-    text-decoration: underline;
     font-weight: bold;
+    color:#fbfff6
 }
 
 ul li a:focus {
@@ -330,6 +330,7 @@ ul li a:focus {
 
 /* footer start */
 .footer {
+    background: #f7d36a; 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -384,47 +385,14 @@ ul li a:focus {
     list-style:none;
 }
 /* footer end */
-
+.footer-copyright{
+    display:flex;
+    justify-content: center;
+}
 
 
 
 /* responsiveness */
-@media only screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .content_container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .header_content {
-        width: 90%;
-    }
-
-    .header_img-container {
-        display: none;
-    }
-
-    .experience {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 @media only screen and (max-width:600px){
     .nav img {
         height: 30px;
@@ -509,4 +477,8 @@ ul li a:focus {
      .branches{
         margin-left: 2.25rem;
      }
+    .footer-copyright{
+    display:flex;
+    justify-content: center;
+}
 }
